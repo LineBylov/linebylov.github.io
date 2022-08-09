@@ -9,5 +9,7 @@ ba ba ba ba ba ba
 ba ba ba ba ba
 bannana bannana
 
+hola mine fruinde
+
 hakuna matata
 er det kloveste ord
