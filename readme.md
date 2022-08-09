@@ -8,3 +8,6 @@ u lived so well
 ba ba ba ba ba ba
 ba ba ba ba ba
 bannana bannana
+
+hakuna matata
+er det kloveste ord
