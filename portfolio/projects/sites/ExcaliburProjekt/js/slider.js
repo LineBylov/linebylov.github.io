@@ -10,7 +10,7 @@ let slides = [
 
 let imageSlider = document.getElementById('slides');
 let currentImgIndex = 0;
-document.getElementById('slides').innerHTML = `<img src="img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
+document.getElementById('slides').innerHTML = `<img src="./img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
 
 function nextSlide() {
     if(currentImgIndex < slides.length -1){
@@ -19,7 +19,7 @@ function nextSlide() {
     else{
         currentImgIndex = 0;
     }
-    document.getElementById('slides').innerHTML = `<img src="img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
+    document.getElementById('slides').innerHTML = `<img src="./img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
 
     //console.log(currentImgIndex);
 }
@@ -31,7 +31,7 @@ function prevSlide() {
     else{
         currentImgIndex--;
     }
-    document.getElementById('slides').innerHTML = `<img src="img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
+    document.getElementById('slides').innerHTML = `<img src="./img/galleri/${slides[currentImgIndex]}" class="gallery-container-slider-img"/>`;
 
     //console.log(currentImgIndex);
 }
