@@ -1,0 +1,25 @@
+$colors: (
+  bg: #DDE6E5,
+  heading: #EB8602,
+  shadow: #402D1C,
+  primary: #6C7280,
+  secondary: #D98F89,
+  tertiary:#A5BCDC,
+  
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+$font-sizes: (
+  xl: 10rem,
+  lg: 4rem,
+  md: 2rem,
+  sm: 1.6rem,
+  xs: 1.4rem,
+);
+
+@function font($size) {
+  @return map-get($font-sizes, $size);
+}

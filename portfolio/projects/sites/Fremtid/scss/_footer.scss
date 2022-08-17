@@ -1,0 +1,51 @@
+.footer{
+  height: 10vh;
+  width: 100%;
+  background-color: color(bg);
+  @include flexPosition;
+
+  &-up{
+    height: 40px;
+    width: 40px;
+    margin: 2rem .2rem;
+    @include flexPosition;
+    border-radius: 50%;
+    
+    &:hover{
+      background-color: color(secondary);
+      box-shadow: 0 0 5px color(shadow);
+    }
+
+    &-link{
+      text-decoration: none;
+      color: black;
+    }
+
+    &-item{
+      font-size: font(md) + 1rem;
+      @include responsive(xs){
+        font-size: font(md);
+      }
+    }
+  }
+
+  &-copy{
+    height: 100%;
+    width: 65%;
+    @include flexPosition($ai: flex-end);
+    border-top: 2px solid color(tertiary);
+    
+    .fa-copyright{
+      margin: 2.5rem 0;
+    }
+
+    &-txt{
+      font-size: font(md);
+      margin: 2rem .5rem;
+      
+      @include responsive(xs){
+        font-size: font(sm);
+      }
+    }
+  }
+}

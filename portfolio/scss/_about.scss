@@ -1,0 +1,110 @@
+.about {
+  background-color: black;
+  @include flexC;
+
+  &-container {
+    margin: 10rem;
+    background-color: color(primary);
+    width: 55rem;
+    height: 55rem;
+    border-radius: 100px 100px 260px 260px;
+    overflow: hidden;
+    @include flexC;
+
+    @include respo(xl){
+      width: 65rem;
+      height: 65rem;
+    }
+    @include respo(md){
+      width: 50rem;
+      height: 65rem;
+      flex-direction: column-reverse;
+    }
+    @include respo(sm){
+      margin: 10rem 2rem 10rem 10rem;
+      width: 35rem;
+      height: 80rem;
+    }
+
+    &-left {
+      width: 50%;
+      height: 100%;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 260px;
+      padding: 1.5rem;
+      @include flexC($jc: start);
+      flex-direction: column;
+
+      @include respo(md){
+        width: 100%;
+        height: 60%;
+        border-top-left-radius: 1px;
+        border-bottom-right-radius: 260px;
+              
+      }
+
+      &-heading{
+        font-size: font(lg);
+        font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+        margin: 5rem 0 2rem 0;
+
+        @include respo(lg){
+          font-size: font(md)+.5rem;
+        }
+        @include respo(md){
+          margin: 1rem 0 2rem 0;
+        }
+      }
+
+      &-paragraph{
+        font-size: font(xs);
+        margin: .5rem 0;
+
+        @include respo(md){
+          margin: 0 2rem;
+        }
+      }
+    }
+
+    &-right {
+      width: 50%;
+      height: 100%;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 260px;
+
+      @include respo(md){
+        width: 100%;
+        height: 40%;
+        border-bottom-right-radius: 1px;
+        border-top-left-radius: 100px;
+      }
+
+      &-img {
+        height: 100%;
+        transform: translateX(-130px);
+
+        @include respo(md){
+          transform: translateX(0px);
+          width: 100%;
+        }
+        @include respo(sm){
+          transform: translateX(0px);
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      &-imgbox {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-left: 1.5px solid white;
+
+        @include respo(md){
+          border-left: none;
+          border-bottom: 1.5px solid white;
+        }
+      }
+    }
+  }
+}

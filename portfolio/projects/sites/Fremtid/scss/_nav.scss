@@ -1,0 +1,151 @@
+.logo {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+
+  @include responsive(sm) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.nav {
+  &-checkbox {
+    display: none;
+  }
+
+  // Big main button
+  $btn-size: 70px;
+  $btn-position: 50px;
+  $burger-spacing: 5px;
+
+  &-button {
+    position: fixed;
+    cursor: pointer;
+    bottom: $btn-position;
+    right: $btn-position;
+    height: $btn-size;
+    width: $btn-size;
+    background-color: color(tertiary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px color(shadow);
+    z-index: 666;
+
+    &-line {
+      position: relative;
+      display: inline-block;
+      top: $btn-size / 2;
+      left: 50%;
+      height: 3px;
+      width: 25px;
+      transform: translateX(-50%);
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: inherit;
+        height: inherit;
+        width: inherit;
+        background-color: #fff;
+      }
+
+      &::before {
+        top: -$burger-spacing;
+      }
+
+      &::after {
+        top: $burger-spacing;
+      }
+    }
+  }
+
+  // Small buttons
+  $btn-small-center: 65px;
+  $btn-small-size: 40px;
+  //$btn-small-hover: 150px;
+
+  &-small {
+    position: fixed;
+    bottom: $btn-small-center;
+    right: $btn-small-center;
+    height: $btn-small-size;
+    width: $btn-small-size;
+    box-shadow: 0 0 5px color(shadow);
+    border-radius: 50%;
+    transition: all 500ms cubic-bezier(0.6, -0.5, 0.4, 1.5);
+    z-index: 1;
+
+    &-link {
+      position: relative;
+      display: block;
+      height: inherit;
+      width: inherit;
+      border-radius: inherit;
+      text-decoration: none;
+      color: white;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: font(sm) + 0.3rem;
+    }
+  }
+
+  &-btn {
+    &-1 {
+      background-color: color(primary);
+    }
+    &-2 {
+      background-color: color(secondary);
+      transition-delay: 50ms;
+    }
+    &-3 {
+      background-color: color(primary);
+      transition-delay: 100ms;
+    }
+    &-4 {
+      background-color: color(secondary);
+      transition-delay: 150ms;
+    }
+    &-5 {
+      background-color: color(primary);
+      transition-delay: 200ms;
+    }
+  }
+
+  // When checked
+  $btn-1-active: 135px;
+  $btn-2-active: 118px;
+  $btn-3-active: 135px;
+  $btn-4-active: 15px;
+  $btn-5-active: 15px;
+  $btn-5-right-active: 110px;
+
+  &-checkbox:checked ~ &-btn-1 {
+    bottom: $btn-2-active;
+    right: $btn-4-active;
+  }
+
+  &-checkbox:checked ~ &-btn-2 {
+    bottom: $btn-1-active;
+  }
+
+  &-checkbox:checked ~ &-btn-3 {
+    bottom: $btn-2-active;
+    right: $btn-2-active;
+  }
+
+  &-checkbox:checked ~ &-btn-4 {
+    right: $btn-3-active;
+  }
+
+  &-checkbox:checked ~ &-btn-5 {
+    bottom: $btn-5-active;
+    right: $btn-5-right-active;
+  }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base';
+
+@import 'components/hero';
+@import 'components/shifts';
+@import 'components/nav';
+@import 'components/mask';
+@import 'components/footer';
+
+@import 'head';
+@import 'project';
+@import 'about';
+@import 'contact';
+
+@import 'projectunder';

@@ -1,0 +1,90 @@
+.exo {
+  @include flexPosition;
+
+  @include responsive(md){
+    flex-direction: column;
+  }
+  &-left {
+    @include blobGrid;
+
+    @include responsive(md){
+      @include flexPosition;
+      flex-direction: column;
+
+    }
+
+    &-bloblift {
+      height: 450px;
+      width: 350px;
+      grid-column: 1;
+      grid-row: 1;
+      background-color: color(secondary);
+      border-radius: 90% 30% 50% 60%;
+
+      @include responsive(md){
+        visibility: hidden;
+        @include gone;
+      }
+    }
+    &-blobalone {
+      height: 400px;
+      width: 300px;
+      grid-column: 8;
+      grid-row: 6;
+      background-color: color(secondary);
+      border-radius: 50% 60% 90% 30%;
+
+      @include responsive(lg){
+        visibility: hidden;
+        @include gone;
+      }
+    }
+
+    &-imagelift {
+      grid-column: 2;
+      grid-row: 1;
+      margin: 2rem;
+      height: 500px;
+
+      @include responsive(lg){
+        height: 550px;
+      }
+      @include responsive(sm){
+        height: 400px;
+      }
+      @include responsive(xs){
+        height: 300px;
+      }
+
+      
+    }
+    &-imagealone {
+      grid-column: 4;
+      grid-row: 7;
+      margin: 2rem;
+      height: 350px;
+
+      @include responsive(lg){
+        visibility: hidden;
+        @include gone;
+      }
+    }
+
+    &-img {
+      height: 100%;
+      border-radius: 60% 20% 70% 10%;
+
+      &-hide{
+        @include responsive(lg){
+          visibility: hidden;
+        @include gone;
+        }
+        
+      }
+    }
+  }
+
+  &-right {
+    @include article;
+  }
+}

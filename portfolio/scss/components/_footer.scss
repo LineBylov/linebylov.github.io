@@ -1,0 +1,11 @@
+.footer{
+  background-color: color(primary);
+  height: 15rem;
+  @include flexC;
+
+  &-heading{
+    font-size: font(lg);
+    font-family: 'Zen Loop', 'Quicksand', Arial, Helvetica;
+    font-weight: 700;
+  }
+}

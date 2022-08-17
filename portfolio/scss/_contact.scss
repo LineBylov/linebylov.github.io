@@ -1,0 +1,129 @@
+.contact{
+  padding: 5rem 0;
+  background-color: black;
+  @include flexC;
+  flex-direction: column;
+
+  &-heading{
+    padding-top: 3rem;
+    text-align: center;
+    color: color(primary);
+    font-size: font(xl);
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+
+    @include respo(xs){
+      font-size: font(lg);
+      margin-left: 5rem;
+    }
+  }
+
+  &-subheading{
+    font-size: font(md);
+    padding-top: 1rem; 
+    color: white;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    @include respo(xs){
+      font-size: font(sm)+.5rem;
+      margin-left: 5rem;
+    }
+  }
+
+  &-container{
+    @include flexC;
+    width: 100%;
+    padding: 2rem;
+
+    @include respo(md){
+      flex-direction: column;
+    }
+  }
+
+  &-left{
+    width: 50%;
+    @include flexC;
+    flex-direction: column;
+    border-right: 1.5px solid color(primary);
+
+    @include respo(md){
+      width: 90%;
+      padding: 2rem 0;
+      border-right: none;
+      border-bottom: 1.5px solid color(primary);
+    }
+
+    &-article{
+      margin: 2rem;
+      margin-left: 6rem;
+      height: 15rem;
+      @include flexC;
+
+      &-paragraph{
+        text-align: center;
+        line-height: 3rem;
+        color: white;
+        font-size: font(xs);
+        font-family: 'Quicksand', Arial, Helvetica;
+      }
+    }
+  }
+
+  &-right{
+    width: 50%;
+    @include flexC;
+    color: white;
+
+    @include respo(md){
+      width: 90%;
+    }
+
+    &-list{
+      padding: 4rem;
+      width: 90%;
+
+      @include respo(lg){
+        padding: 2rem;
+      }
+      @include respo(md){
+        padding: 1rem;
+        margin-left: 5rem;
+      }
+    }
+
+    &-item{
+      list-style: none;
+      margin: 2rem;
+
+      @include respo(lg){
+        margin: 1rem;
+      }
+      @include respo(xs){
+        margin: .5rem;
+      }
+
+      .fa-solid{
+        color: color(primary);
+        font-size: font(md) + .5rem;
+      }
+    }
+
+    &-txt{
+      margin-left: 5rem;
+      font-size: font(sm);
+      font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+
+      @include respo(xs){
+        margin-left: 2rem;
+        font-size: font(xs);
+      }
+
+      &-link{
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+  }
+
+}
