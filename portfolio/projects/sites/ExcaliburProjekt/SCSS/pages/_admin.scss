@@ -1,0 +1,516 @@
+/* VELKOMMEN */
+.velkommen{
+  background-color: color(quarternary);  
+  width: 100%;
+  height: 100vh;
+  padding-top: 10rem;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  grid-gap: 2rem;
+  @include respo(md){
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 45% 45%;
+      height: 160vh;
+  }
+
+  &-heading{
+      @include heading;
+      color: color(primary);
+      text-shadow: 2px 2px black;
+      font-size: font(xl)+ 3rem;
+      text-align: center;
+      grid-area: 1/1/1/3;
+      @include respo(sm){
+          font-size: font(xl);
+          width: 35rem;
+      }
+  }
+
+  &-link{
+      text-decoration: wavy;
+      color: white;
+      justify-self: center;
+      align-items: center;
+      
+      &-content{
+          width: 40rem;
+          height: 90%;
+          background-color: color(tertiary); 
+          border-radius: 15px;
+          @include flexPosition; 
+          @include respo(sm){
+            width: 25rem;
+          }
+          
+          &-text{
+              font-size: font(lg);
+          }
+        }
+    }
+
+    .one{
+        grid-area: 2/1/2/1;
+    }
+    .two{
+        grid-area: 2/2/2/2;
+        @include respo(md){
+            grid-area: 3/1/3/1;
+        }
+        @include respo(sm){
+            text-align: center;
+          }
+    }
+}
+
+.logout{
+    color: black;
+    font-size: font(md) + .5rem;
+}
+
+/* GALLERI */
+.adminGallery{
+    background-color: skyblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    &-heading{
+        @include heading;
+        color: color(primary);
+        text-shadow: 2px 2px black;
+        font-size: font(xl)+ 3rem;
+        text-align: center;
+        margin-top: 3rem;
+        grid-area: 1/2/1/2;
+        @include respo(sm){
+            font-size: font(xl);
+        }
+        
+    }
+
+    &-btnbox{
+        height: 100%;
+        grid-area: 2/2/2/2;
+        @include flexPosition;
+    }
+
+    &-btn{
+        width: 40rem;
+        height: 30rem;
+        font-size: font(lg);
+        font-weight: 700;
+        border-radius: 50%;
+        border: 2px solid color(tertiary);
+        color: color(tertiary);
+        letter-spacing: 2px;
+        z-index: 1;
+        cursor: pointer;
+        @include respo(sm){
+            width: 25rem;
+            height: 20rem;
+          }
+    }
+    &-btn:hover{
+        border: 3px solid white;
+        color: white;
+        background-color: color(tertiary);
+    }
+
+
+    &-container{
+        justify-self: center;
+        align-self: center;
+        background-color: transparentize(white, .3);
+        padding: 2rem;
+        z-index: 200;
+        position: inherit;
+        height: 30rem;
+        grid-area: 2/2/2/2;
+        display: none;
+        @include flexPosition;
+        @include respo(sm){
+            width: 35rem;
+            flex-direction: column;
+          }
+
+        &-close{
+            align-self: start;
+            font-size: font(lg);
+            cursor: pointer;
+        }
+
+        &-add{
+            display: flex;
+            margin: 1rem;
+
+            &-heading{
+                margin: 1rem;
+                font-size: font(md);
+                color: midnightblue;
+            }
+            &-input{
+                height: 5rem;
+            }
+            &-plus{
+                font-size: font(md);
+                @include flexPosition;
+                margin: 0 1rem;
+                border: 2px solid midnightblue;
+                background-color: white;
+                padding: 1rem;
+            }
+        }
+
+    &-remove{
+        display: flex;
+        margin: 1rem;
+
+        &-heading{
+            margin: 1rem;
+            font-size: font(md);
+            color: midnightblue;
+        }
+
+        &-input{
+            height: 5rem;
+        }
+        &-minus{
+            font-size: font(md);
+            @include flexPosition;
+            margin: 0 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            padding: 1rem;
+        }
+    }
+}
+}
+
+
+/* NYHEDER */
+.adminNews{
+    background-color: skyblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: repeat(3, 1fr);
+
+    &-heading{
+        @include heading;
+        color: color(primary);
+        text-shadow: 2px 2px black;
+        font-size: font(xl)+ 3rem;
+        text-align: center;       
+        grid-area: 1/2/1/2;
+        @include respo(sm){
+            font-size: font(xl);
+        }
+        
+    }
+
+    &-btnbox{
+        height: 100%;
+        grid-area: 2/2/2/2;
+        @include flexPosition;
+    }
+
+    &-btn{
+        width: 40rem;
+        height: 30rem;
+        font-size: font(lg);
+        font-weight: 700;
+        border-radius: 50%;
+        border: 2px solid color(tertiary);
+        color: color(tertiary);
+        letter-spacing: 2px;
+        z-index: 1;
+        cursor: pointer;
+        @include respo(sm){
+            width: 25rem;
+            height: 20rem;
+          }
+    }
+    &-btn:hover{
+        border: 3px solid white;
+        color: white;
+        background-color: color(tertiary);
+    }
+
+
+    &-container{
+        justify-self: center;
+        align-self: center;
+        background-color: transparentize(white, .3);
+        padding: 2rem;
+        z-index: 200;
+        position: inherit;
+        height: 30rem;
+        grid-area: 2/2/2/2;
+        display: none;
+        @include flexPosition;
+        @include respo(sm){
+            width: 35rem;
+            flex-direction: column;
+          }
+
+        &-close{
+            align-self: start;
+            font-size: font(lg);
+            cursor: pointer;
+        }
+
+        &-add{
+            display: flex;
+            margin: 1rem;
+
+            &-heading{
+                margin: 1rem;
+                font-size: font(md);
+                color: midnightblue;
+            }
+            &-input{
+                height: 5rem;
+            }
+            &-plus{
+                font-size: font(md);
+                @include flexPosition;
+                margin: 0 1rem;
+                border: 2px solid midnightblue;
+                background-color: white;
+                padding: 1rem;
+            }
+        }
+
+    &-remove{
+        display: flex;
+        margin: 1rem;
+
+        &-heading{
+            margin: 1rem;
+            font-size: font(md);
+            color: midnightblue;
+        }
+
+        &-input{
+            height: 5rem;
+        }
+        &-minus{
+            font-size: font(md);
+            @include flexPosition;
+            margin: 0 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            padding: 1rem;
+        }
+    }
+}
+}
+
+
+/* NYT MEDLEM */
+.adminMember{
+    background-color: skyblue;
+    width: 100%;
+    height: 100vh;
+
+    &-heading{
+        @include heading;
+        color: color(primary);
+        text-shadow: 2px 2px black;
+        font-size: font(xl)+ 3rem;
+        text-align: center;
+        margin-top: 3rem;
+        @include respo(sm){
+            font-size: font(xl);
+        }
+    }
+
+    &-container{
+        width: 100%;
+        height: auto;
+        @include flexPosition($jc: space-around);
+        @include respo(md){
+            flex-direction: column;
+        }
+
+        &-content{
+            width: 40rem;
+            height: 50rem;
+            border-radius: 15px;
+            border: 2px solid midnightblue;
+            @include flexPosition;
+            @include respo(md){
+                height: 30rem;
+                width: 80%;
+            }
+
+            &-text{
+                width: 95%;
+                height: 95%;
+                background-color: midnightblue;
+                color: skyblue;
+                font-size: font(lg);
+                @include flexPosition;
+                @include respo(sm){
+                    text-align: center;
+                  }
+            }
+        }
+
+        .div{
+            border: 2px solid midnightblue;
+            border-radius: 15px;
+            width: 40rem;
+            height: 50rem;
+            @include flexPosition;
+            flex-direction: column;
+            @include respo(md){
+                height: 30%;
+                width: 80%;
+                margin-top: 3rem;
+            }
+        }
+
+        &-add{
+            margin: 3rem;
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            color: midnightblue;
+            text-align: center;
+            @include respo(md){
+                margin: 1rem;
+            }
+        }
+        &-add:hover{
+            border: 2px solid white;
+            background-color: midnightblue;
+            color: white;
+        }
+        &-decline{
+            margin: 3rem;
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            color: midnightblue;
+            text-align: center;
+            @include respo(md){
+                margin: 1rem;
+            }
+        }
+        &-decline:hover{
+            border: 2px solid white;
+            background-color: midnightblue;
+            color: white;
+        }
+    }
+}
+
+
+/* PROFIL OPDATERINGER */
+.adminProfil{
+    background-color: skyblue;
+    width: 100%;
+    height: 100vh;
+
+    &-heading{
+        @include heading;
+        color: color(primary);
+        text-shadow: 2px 2px black;
+        font-size: font(xl)+ 3rem;
+        text-align: center;
+        margin-top: 3rem;
+        grid-area: 1/1/1/3;
+        @include respo(sm){
+            font-size: font(xl);
+        }
+    }
+
+    &-container{
+        width: 100%;
+        height: auto;
+        @include flexPosition($jc: space-around);
+        @include respo(md){
+            flex-direction: column;
+        }
+
+        &-content{
+            width: 40rem;
+            height: 50rem;
+            border-radius: 15px;
+            border: 2px solid midnightblue;
+            @include flexPosition;
+            @include respo(md){
+                height: 30rem;
+                width: 80%;
+            }
+
+            &-text{
+                width: 95%;
+                height: 95%;
+                background-color: midnightblue;
+                color: skyblue;
+                font-size: font(lg);
+                @include flexPosition;
+                @include respo(sm){
+                    text-align: center;
+                  }
+            }
+        }
+
+        .div{
+            border: 2px solid midnightblue;
+            border-radius: 15px;
+            width: 40rem;
+            height: 50rem;
+            @include flexPosition;
+            flex-direction: column;
+            @include respo(md){
+                height: 30%;
+                width: 80%;
+                margin-top: 3rem;
+            }
+        }
+
+        &-add{
+            margin: 3rem;
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            color: midnightblue;
+            text-align: center;
+            @include respo(md){
+                margin: 1rem;
+            }
+        }
+        &-add:hover{
+            border: 2px solid white;
+            background-color: midnightblue;
+            color: white;
+        }
+        &-decline{
+            margin: 3rem;
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid midnightblue;
+            background-color: white;
+            color: midnightblue;
+            text-align: center;
+            @include respo(md){
+                margin: 1rem;
+            }
+        }
+        &-decline:hover{
+            border: 2px solid white;
+            background-color: midnightblue;
+            color: white;
+        }
+    }
+}

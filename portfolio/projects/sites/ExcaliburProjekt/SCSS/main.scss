@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "body";
+
+@import "components/navprim";
+
+@import "pages/frontPage/header";
+@import "pages/frontPage/animate";
+@import "pages/frontPage/aboutFront";
+@import "pages/frontPage/eventsFront";
+@import "pages/frontPage/newsFront";
+@import "pages/frontPage/memberFront";
+@import "pages/frontPage/galleryFront";
+@import "pages/frontPage/newMemberFront";
+@import "pages/frontPage/footer";
+@import "pages/info";
+@import "pages/gallery";
+@import "pages/events";
+@import "pages/member";
+@import "pages/login";
+@import "pages/contact";
+@import "pages/forum";
+@import "pages/profile";
+@import "pages/admin";

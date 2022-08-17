@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/7ae9d4106c.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Excalibur Login</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="body-under">
+
+     <!-- NAVIGATION -->
+     <nav class="nav">
+        <div class="nav-logocontain">
+          <a href="../index.html" class="nav-logocontain-link">
+            <img src="../img/EX-Logo.svg" alt="Excaliburs logo" class="nav-logo" />
+          </a>
+        </div>
+        <input type="checkbox" id="check" class="checkbox" hidden />
+        <div class="nav-burger">
+          <label for="check" class="nav-bar">
+            <div class="nav-bar-line nav-bar-line-1"></div>
+            <div class="nav-bar-line nav-bar-line-2"></div>
+            <div class="nav-bar-line nav-bar-line-3"></div>
+          </label>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-menu-right">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="info.html" class="nav-list-link">Om os</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="events.html" class="nav-list-link">Arrangementer</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="gallery.html" class="nav-list-link">Galleri</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="member.html" class="nav-list-link">Bliv medlem</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="contact.html" class="nav-list-link">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- LOGIN -->
+      <section class="login">
+
+          <!-- MEDLEM -->
+          <div class="login-member">
+            <h2 class="login-member-heading">Medlems login</h2>
+              <form class="login-member-form">
+                  <input type="text" placeholder="BRUGERNAVN..." class="login-member-form-input" id="memberName" required>
+                  <input type="password" placeholder="KODE..." class="login-member-form-input" id="memberCode" required>
+
+                  <button class="login-member-form-btn" id="memberBtn" onclick="return memberLogin()">Login</button>
+              </form>
+          </div>
+
+          <!-- ADMIN -->
+          <div class="login-admin">
+            <h2 class="login-admin-heading">Administrende login</h2>
+              <form class="login-admin-form">
+                  <input type="text" placeholder="BRUGERNAVN..." class="login-admin-form-input" id="adminName" required>
+                  <input type="password" placeholder="KODE..." class="login-admin-form-input" id="adminCode" required>
+
+                  <button class="login-admin-form-btn" id="adminBtn" onclick="return adminLogin()">Login</button>
+              </form>
+          </div>
+
+          <a href="member.html" class="login-link">Er du ikke medlem endnu så meld dig ind her</a>
+      </section>
+
+      <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="#" class="footer-link">
+         <img src="../img/EX-Logo.svg" alt="logo" class="footer-container-logo"
+       /></a>
+      <h2 class="footer-container-heading">Excalibur</h2>
+      </div>
+      <article class="footer-article">
+        <ul class="footer-article-list">
+          <li class="footer-article-list-item">Tlf. 1234 5678</li>
+          <li class="footer-article-list-item">
+            Adr. Excaliburvej 37, 8800 Viborg
+          </li>
+        </ul>
+
+        <ul class="footer-article-list">
+            <a href="info.html" class="footer-article-list-link"><li class="footer-article-list-item">Om os</li></a>
+            <a href="events.html" class="footer-article-list-link"><li class="footer-article-list-item">Arrangementer</li></a>
+            <a href="gallery.html" class="footer-article-list-link"><li class="footer-article-list-item">Galleri</li></a>
+        </ul>
+
+        <ul class="footer-article-list">
+            <a href="member.html" class="footer-article-list-link"><li class="footer-article-list-item">Bliv medlem</li></a>
+            <a href="login.html" class="footer-article-list-link"><li class="footer-article-list-item">Login</li></a>
+            <a href="contact.html" class="footer-article-list-link"><li class="footer-article-list-item">Kontakt</li></a>
+        </ul>
+      </article>
+    </footer>
+    
+    <script src="../js/pages/login.js"></script>
+</body>
+</html>

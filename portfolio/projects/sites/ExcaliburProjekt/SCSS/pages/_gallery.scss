@@ -1,0 +1,132 @@
+.gallerypage{
+  margin: 2rem;
+
+  &-heading{
+    padding-top: 5rem;
+    text-shadow: 1px 1px color(black);
+    @include heading($size: font(xl) + 2rem);
+    text-shadow: 2px 2px color(black);
+    text-align: center;
+
+    @include respo(md){
+      @include heading;
+    }
+  }
+
+  &-imgbox{
+    margin: 2rem;
+    width: 62%;
+
+    @include respo(sm){
+      margin: -.1rem;
+      width: 100%;
+    }
+  }
+
+  &-img{
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &-right{
+    margin: 2rem;
+    z-index: 1;
+    position: fixed;
+    padding: 1rem;
+    width: 30%;
+    background-color: color(primary);
+    border-radius: 5px;
+    right: 0%;
+
+    @include respo(sm){
+      margin: 1rem;
+      width: 35%;
+      top: 35%;
+    }
+
+    &-content{
+      background-color: color(white);
+      border-radius: 5px;
+
+      &-list{
+        padding: 2rem 1rem;
+      }
+
+      &-link{
+        text-decoration: none;
+        color: color(black);
+        font-family: 'Sawarabi Mincho';
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+      &-up{
+        text-decoration: none;
+        color: color(black);
+
+        &:hover{
+          color: color(primary);
+        }
+      }
+      
+      &-item{
+        list-style: none;
+      }
+    }
+    
+    &-icon{
+      @include flexPosition;
+      margin: 0 1rem;
+      font-size: font(xl);
+    }
+  }
+
+
+
+  //  GALLERI
+
+  &-gallery{
+    margin: 5rem 2rem;
+    width: 62%;
+
+    @include respo(sm){
+      margin: 5rem 1rem;
+      width: 58%;
+    }
+
+    &-heading{
+      background-color: rgba(color(white), .6);
+      border-radius: 5px;
+      margin: 2rem 0;
+      @include heading;
+      text-align: center;
+
+      @include respo(sm){
+      @include heading($size: font(md)+.5rem);
+      }
+    }
+
+    &-container{
+      line-height: 0;
+      column-count: 3;
+      column-gap: 4px;
+
+      @include respo(md){
+        column-count: 2;
+      }
+      @include respo(sm){
+        column-count: 1;
+      }
+
+      &-img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Excalibur Min Profil</title>
+</head>
+<body class="body-under">
+         <!-- LOGO -->
+         <nav class="nav">
+            <div class="nav-logocontain">
+              <a href="../index.html" class="nav-logocontain-link">
+                <img src="../img/EX-Logo.svg" alt="Excaliburs logo" class="nav-logo" />
+              </a>
+            </div>
+            <div class="nav-burger">
+              <li class="nav-login">
+                <a href="forum.html" class="nav-login-text profileLink">Gå tilbage</a> <br>
+                <a href="login.html" class="nav-login-text profileLink">Log ud</a>
+              </li>
+            </div>
+         </nav>
+
+         <!-- PROFIL -->
+         <section class="profil">
+             <div class="profil-container">
+                 <div class="profil-container-img">
+                     <p class="profil-container-img-text">Tilføj billede</p>
+                 </div>
+             </div>
+             <div class="profil-content">
+                 <form class="profil-content-form" id="form">
+                     <input type="text" class="profil-content-form-input" placeholder="Karakter navn...">
+                     <textarea class="profil-content-form-text" cols="30" rows="14" placeholder="Om min karakter..."></textarea>
+                     <button class="profil-content-form-btn" id="submit" onclick="profilUpd()">Læg op</button>
+                 </form>
+             </div>
+         </section>
+
+         <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="footer-container">
+          <a href="#" class="footer-link">
+           <img src="../img/EX-Logo.svg" alt="logo" class="footer-container-logo"
+         /></a>
+        <h2 class="footer-container-heading">Excalibur</h2>
+        </div>
+        <article class="footer-article">
+          <ul class="footer-article-list">
+            <li class="footer-article-list-item">Tlf. 1234 5678</li>
+            <li class="footer-article-list-item">
+              Adr. Excaliburvej 37, 8800 Viborg
+            </li>
+          </ul>
+  
+          <ul class="footer-article-list">
+              <a href="info.html" class="footer-article-list-link"><li class="footer-article-list-item">Om os</li></a>
+              <a href="events.html" class="footer-article-list-link"><li class="footer-article-list-item">Arrangementer</li></a>
+              <a href="gallery.html" class="footer-article-list-link"><li class="footer-article-list-item">Galleri</li></a>
+          </ul>
+  
+          <ul class="footer-article-list">
+              <a href="member.html" class="footer-article-list-link"><li class="footer-article-list-item">Bliv medlem</li></a>
+              <a href="login.html" class="footer-article-list-link"><li class="footer-article-list-item">Login</li></a>
+              <a href="contact.html" class="footer-article-list-link"><li class="footer-article-list-item">Kontakt</li></a>
+          </ul>
+        </article>
+      </footer>
+    
+      <script src="../js/pages/profile.js"></script>
+</body>
+</html>

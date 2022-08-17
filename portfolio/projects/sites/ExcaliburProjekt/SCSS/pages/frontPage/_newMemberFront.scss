@@ -1,0 +1,62 @@
+.NewMember{
+    height: 100vh;
+    @include flexPosition($jc:start, $ai:end);
+    flex-direction: column;
+    @include legs($width:29%);
+
+    @include respo(sm){
+        @include legs($width:85%, $mar: 0 2rem);
+        height: 100%;
+        margin: 10rem 0;
+    }
+
+    &-container{
+        background-color: color(primary);
+        margin: 2rem 2rem 0 2rem;
+        height: 45%;
+        width: 29%;
+        border-radius: 5px;
+        padding: 1rem 1rem 0 0;
+
+        @include respo(sm){
+            height: 15rem;
+            width: 85%;
+        }
+
+        &-article{
+            height: 100%;
+            width: 100%;
+            background-color: color(white);
+            border-radius: 5px;
+            text-align: center;
+
+            &-heading{
+                @include heading;
+                padding: 2rem 0;
+
+                @include respo(md){
+                    @include heading($size: font(md)+ .5rem);
+                }
+                @include respo(md){
+                    @include heading($size: font(md));
+                }
+            }
+            &-link{
+                margin: 3rem 0;
+                padding: .5rem;
+                border: 2px solid color(primary);
+                border-radius: 15px;
+                text-decoration: none;
+                font-size: font(sm);
+                color: color(primary);
+                cursor: pointer;
+
+                &:hover{
+                    background-color: color(primary);
+                    border: 2px solid color(white);
+                    color: color(white);
+                }
+            }
+        }
+    }
+}

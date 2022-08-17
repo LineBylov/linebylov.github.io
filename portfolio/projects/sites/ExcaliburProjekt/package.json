@@ -1,0 +1,20 @@
+{
+  "name": "excaliburprojekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bur": "sass scss:css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LineBylov/ExcaliburProjekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LineBylov/ExcaliburProjekt/issues"
+  },
+  "homepage": "https://github.com/LineBylov/ExcaliburProjekt#readme"
+}

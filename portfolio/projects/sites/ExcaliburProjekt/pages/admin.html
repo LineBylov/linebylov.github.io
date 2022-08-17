@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/7ae9d4106c.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Excalibur Adminitration</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+     <!-- NAVIGATION -->
+     <nav class="nav">
+        <div class
+        
+        
+        
+        ="nav-logocontain">
+          <a href="../index.html" class="nav-logocontain-link">
+            <img src="../img/EX-Logo.svg" alt="Excaliburs logo" class="nav-logo" />
+          </a>
+        </div>
+        <div class="nav-burger">
+            <a href="login.html" class="logout">Log ud</a>
+        </div>
+        </nav>
+
+        <!-- VELKOMMEN -->
+        <section class="velkommen">
+            <h2 class="velkommen-heading">Velkommen Admin</h2>
+            <a href="#rettelser" class="velkommen-link one">
+                <div class="velkommen-link-content">
+                    <h3 class="velkommen-link-content-text">Nye rettelser</h3>
+                </div>
+            </a>
+            <a href="#anmodning" class="velkommen-link two">
+                <div class="velkommen-link-content">
+                    <h3 class="velkommen-link-content-text">Nye anmodninger</h3>
+                </div>
+            </a>
+        </section>
+
+        <!-- GALLERI -->
+        <section class="adminGallery" id="rettelser">
+            <h2 class="adminGallery-heading">Ændring til galleri</h2>
+            <div class="adminGallery-btnbox">
+                <button class="adminGallery-btn" id="adminGalleryBtn" onclick="adminModalOpen()">Opret Galleri</button>
+            </div>
+            <div class="adminGallery-container" id="adminGalleryModal">
+                <span class="adminGallery-container-close" onclick="adminModalClose()">&times;</span>
+                <div class="adminGallery-container-add">
+                    <h3 class="adminGallery-container-add-heading">Tilføj billeder</h3>
+                    <input type="text" class="adminGallery-container-add-input" placeholder="Skriv billed ID">
+                    <div class="adminGallery-container-add-plus">+</div>
+                </div>
+                <div class="adminGallery-container-remove">
+                    <h3 class="adminGallery-container-remove-heading">Fjern billeder</h3>
+                    <input type="text" class="adminGallery-container-remove-input" placeholder="Skriv billed ID">
+                    <div class="adminGallery-container-remove-minus">-</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NYHEDER -->
+        <section class="adminNews">
+            <h2 class="adminNews-heading">Rettelser i nyhederne</h2>
+            <div class="adminNews-btnbox">
+                <button class="adminNews-btn" id="adminNewsBtn" onclick="newsModalOpen()">Opret nyheder</button>
+            </div>
+            <div class="adminNews-container" id="adminNewsModal">
+                <span class="adminNews-container-close" onclick="newsModalClose()">&times;</span>
+                <div class="adminNews-container-add">
+                    <h3 class="adminNews-container-add-heading">Tilføj nyhed</h3>
+                    <input type="text" class="adminGallery-container-add-input" placeholder="Skriv billed ID">
+                    <div class="adminNews-container-add-plus">+</div>
+                </div>
+                <div class="adminNews-container-remove">
+                    <h3 class="adminNews-container-remove-heading">Fjern nyhed</h3>
+                    <input type="text" class="adminNews-container-remove-input" placeholder="Skriv billed ID">
+                    <div class="adminNews-container-remove-minus">-</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NYT MEDLEM -->
+        <section class="adminMember" id="anmodning">
+            <h2 class="adminMember-heading">Nye medlems anmodninger</h2>
+            <div class="adminMember-container">
+                <div class="adminMember-container-content">
+                    <div class="adminMember-container-content-text">
+                        Ingen nye anmodninger
+                    </div>
+                </div>
+                <div class="div">
+                <div class="adminMember-container-add">
+                    Godkend anmodning
+                </div>
+                <div class="adminMember-container-decline">
+                    Afvis anmodning
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- PROFIL OPDATERINGER -->
+        <section class="adminProfil">
+            <h2 class="adminProfil-heading">Profil opdaterings anmodninger</h2>
+            <div class="adminProfil-container">
+                <div class="adminMember-container-content">
+                    <div class="adminMember-container-content-text">
+                        Ingen nye anmodninger
+                    </div>
+                </div>
+                <div class="div">
+                <div class="adminMember-container-add">
+                    Godkend anmodning
+                </div>
+                <div class="adminMember-container-decline">
+                    Afvis anmodning
+                </div>
+            </div>
+            </div>
+        </section>
+    
+</body>
+<script src="../js/pages/admin.js"></script>
+</html>

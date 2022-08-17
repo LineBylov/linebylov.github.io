@@ -1,0 +1,73 @@
+.forum{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 90%;
+    margin-top: 5rem;
+    @include respo(md){
+        grid-template-columns: 10% 80% 10%;
+    }
+    @include respo(sm){
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    &-link{
+        grid-area: 1/2/1/2;
+        width: 100%;
+        height: 9rem;
+        padding: 2rem;
+        border-radius: 15px;
+        border: solid 3px color(primary);
+        color: color(primary);
+        background-color: white;
+        text-decoration: none;
+        font-family: 'Sawarabi Mincho';
+        font-size: font(lg);
+        text-align: center;
+    }
+
+    &-content{
+        height: 170vh;
+        grid-area: 2/2;
+        background-color: transparentize(white, .3);
+        padding: 3rem;
+        @include respo(md){
+            height: 120vh;
+        }
+        @include respo(sm){
+            height: 130vh;
+        }
+        
+        &-container{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            margin: 2rem;
+            @include respo(sm){
+                grid-template-columns: 100%;
+            }
+            
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 70px;
+                border: solid 10px color(quarternary);
+            }
+            &-article{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 2rem;
+
+                &-heading{
+                    @include heading($size: font(lg));
+                    margin-bottom: 1rem;
+                }
+                &-text{
+                    font-size: font(sm);
+                }
+            }
+        }
+    }
+}

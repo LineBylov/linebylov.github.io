@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="dk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script
+      src="https://kit.fontawesome.com/7ae9d4106c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/main.css" />
+  <title>Excalibur Kontakt</title>
+</head>
+<body class="body-under">
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-logocontain">
+      <a href="../index.html" class="nav-logocontain-link">
+        <img src="../img/EX-Logo.svg" alt="Excaliburs logo" class="nav-logo" />
+      </a>
+    </div>
+    <input type="checkbox" id="check" class="checkbox" hidden />
+    <div class="nav-burger">
+      <label for="check" class="nav-bar">
+        <div class="nav-bar-line nav-bar-line-1"></div>
+        <div class="nav-bar-line nav-bar-line-2"></div>
+        <div class="nav-bar-line nav-bar-line-3"></div>
+      </label>
+      <li class="nav-login">
+        <a href="login.html" class="nav-login-link">
+          <i class="fa-solid fa-user nav-login-icon">
+            <p class="nav-login-icon-txt">Login</p>
+          </i>
+        </a>
+      </li>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-menu-right">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="info.html" class="nav-list-link">Om os</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="events.html" class="nav-list-link">Arrangementer</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="gallery.html" class="nav-list-link">Galleri</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="member.html" class="nav-list-link">Bliv medlem</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="contact.html" class="nav-list-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- KONTAKT INFO -->
+  <h2 class="contact-heading">Kontakt og Kørselvejledning</h2>
+  <section class="contact-info">
+    <div class="contact-info-left">
+      <article class="contact-info-article">
+        <h2 class="contact-info-heading">Telefon nummere</h2>
+
+        <div class="contact-info-article-listcontainer">
+        <ul class="contact-info-article-list">
+          <li class="contact-info-article-item">Forwoman Gail</li>
+        <li class="contact-info-article-item">Næst Forman Greg</li>
+        <li class="contact-info-article-item-last">Sekretær Ray</li>
+        </ul>
+        <ul class="contact-info-article-list">
+          <li class="contact-info-article-item">+45 1234 5678</li>
+        <li class="contact-info-article-item">+45 9876 5432</li>
+        <li class="contact-info-article-item">+45 1357 9246</li>
+        </ul>
+        </div>
+
+        <h2 class="contact-info-heading">Spillesteder</h2>
+        <li class="contact-info-article-item">Vestervangs skoles ungdomsskole</li>
+        <li class="contact-info-article-item-last">Undallslund</li>
+        <li class="contact-info-article-item-last-hide-1">Vejledning til spillesteder til højre</li>
+        <li class="contact-info-article-item-last-hide-2">Vejledning til spillesteder herunder</li>
+      </article>
+    </div>
+
+    <div class="contact-info-right">
+      <h2 class="contact-info-heading">Vestervangs skoles ungdomsskole</h2>
+      <div class="contact-info-right-top">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Boghvedevej%2026,%208800%20Viborg&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></div>
+      </div>
+      <h2 class="contact-info-heading">Undallslund</h2>
+     <div class="contact-info-right-bot">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=undallslund&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a>
+            <br>
+            <style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}</style>
+            <a href="https://www.embedgooglemap.net">google maps embed api</a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style>
+          </div>
+        </div>
+     </div>
+    </div>
+  </section>
+
+  <section class="contact-form">
+    <div class="contact-form-container">
+      <form class="contact-form-content" id="contactForm">
+        <h3 class="contact-form-heading">Vi svare så hurtigt vi kan.</h3>
+        <input type="text" placeholder="Navn" class="contact-form-content-item" value="" name="name" required>
+        <input type="email" placeholder="Mail" class="contact-form-content-item" value="" name="email" required>
+        <input type="text" placeholder="Emne" class="contact-form-content-item" value="" name="subject" required>
+        <textarea name="message" rows="10" placeholder="Din Besked..." class="contact-form-content-message" value="" name="message" required></textarea>
+        <input type="submit" id="submit" class="contact-form-content-btn">
+      </form>
+    </div>
+  </section>
+
+   <!-- FOOTER  -->
+   <footer class="footer">
+    <div class="footer-container">
+      <a href="#" class="footer-link">
+       <img src="../img/EX-Logo.svg" alt="logo" class="footer-container-logo"
+     /></a>
+    <h2 class="footer-container-heading">Excalibur</h2>
+    </div>
+    <article class="footer-article">
+      <ul class="footer-article-list">
+        <li class="footer-article-list-item">Tlf. 1234 5678</li>
+        <li class="footer-article-list-item">
+          Adr. Excaliburvej 37, 8800 Viborg
+        </li>
+      </ul>
+
+      <ul class="footer-article-list">
+        <a href="info.html" class="footer-article-list-link"><li class="footer-article-list-item">Om os</li></a>
+        <a href="events.html" class="footer-article-list-link"><li class="footer-article-list-item">Arrangementer</li></a>
+        <a href="gallery.html" class="footer-article-list-link"><li class="footer-article-list-item">Galleri</li></a>
+    </ul>
+
+    <ul class="footer-article-list">
+        <a href="member.html" class="footer-article-list-link"><li class="footer-article-list-item">Bliv medlem</li></a>
+        <a href="login.html" class="footer-article-list-link"><li class="footer-article-list-item">Login</li></a>
+        <a href="contact.html" class="footer-article-list-link"><li class="footer-article-list-item">Kontakt</li></a>
+    </ul>
+    </article>
+  </footer>
+</body>
+<script src="../js/pages/contact.js"></script>
+</html>

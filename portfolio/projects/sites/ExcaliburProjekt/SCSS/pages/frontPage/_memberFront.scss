@@ -1,0 +1,124 @@
+.member{
+    height: 100vh;
+    @include flexPosition($ai: end);
+    flex-direction: column;
+    
+    @include respo(sm){
+        height: 100%;
+        margin: 10rem 0;
+      }
+
+    &-content{
+        width: 29%;
+        height: auto;
+        margin-right: 2rem;
+        padding: 2rem;
+        background-color: color(primary);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2rem;
+
+        @include respo(lg){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include respo(md){
+            grid-template-columns: repeat(1, 1fr);
+            height: 50vh;
+            overflow-y: scroll;
+        }
+
+        &-card{
+            background-color: color(quarternary);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &-text{
+                padding: 1rem;
+                text-align: center;
+                color: color(white);
+                font-family: 'Sawarabi Micho';
+                letter-spacing: 1px;
+            }
+        }
+    }
+    &-button{
+        padding: 1rem;
+        border-radius: 15px;
+        border: solid 2px color(primary);
+        margin: 2rem 12%;
+
+        @include respo(lg){
+            margin: 2rem 10.5%;
+        }
+        @include respo(md){
+            margin: 2rem 9%;
+        }
+        @include respo(md){
+            margin: 1rem 2rem;
+            width: 29%;
+        }
+    }
+    &-button:hover{
+        border: solid 2px color(white);
+        background-color: color(primary);
+        color: color(white);
+    }
+
+    &-modal{
+        background-color: color(white);
+        align-self: center;
+        justify-self: center;
+        z-index: 200;
+        width: 80%;
+        height: 80vh;
+        overflow: auto;
+        padding: 2rem;
+        position: absolute;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 5rem 40rem 40rem 40rem 40rem;
+        grid-gap: 5rem;
+        display: none;
+        @include respo(sm){
+            grid-template-columns: 90%;
+            grid-template-rows: 5rem;
+        }
+
+        &-close{
+            grid-area: 1/1/1/4;
+            justify-self: end;
+            padding: 2rem;
+            font-size: font(xl);
+            cursor: pointer;
+            @include respo(sm){
+                grid-area: 1/1/1/1;
+            }
+        }
+
+        &-card{
+            width: 100%;
+            height: 100%;
+
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+            &-text{
+                font-family: 'Sawarabi Mincho';
+                text-align: center;
+                font-size: font(sm);
+                margin: 1rem 0 2rem;
+            }
+        }
+    }
+}

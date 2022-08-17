@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 0.625rem;
+}
+
+body{
+  font-size: font(xs);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-under{
+  background-image: url(../img/EX-Undersider.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  object-fit: cover;
+  background-position: center;
+}
+
+.body-front{
+  background-image: url(../img/EX-Borg.jpg);
+  background-size:contain;
+  background-repeat: repeat;
+  object-fit: cover;
+  background-position: center; 
+}
