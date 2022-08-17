@@ -1,0 +1,65 @@
+[
+    {
+        "title" : "Product 1",
+        "productId" : "111-000",
+        "price" : 150,
+        "image" : "product_1.jpg",
+        "colors" : ["red","blue","green"] 
+    },
+    {
+        "title" : "Product 2",
+        "productId" : "222-000",
+        "price" : 450,
+        "image" : "product_2.jpg",
+        "colors" : ["red", "maroon", "green"] 
+    },
+    {
+        "title" : "Product 3",
+        "productId" : "333-000",
+        "price" : 55,
+        "image" : "product_3.jpg",
+        "colors" : ["red", "yellow", "green"] 
+    },
+    {
+        "title" : "Product 4",
+        "productId" : "444-000",
+        "price" : 150,
+        "image" : "product_4.jpg",
+        "colors" : ["red", "blue", "green"] 
+    },
+    {
+        "title" : "Product 5",
+        "productId" : "555-000",
+        "price" : 25,
+        "image" : "product_5.jpg",
+        "colors" : ["black", "blue", "green"] 
+    },
+    {
+        "title" : "Product 6",
+        "productId" : "666-000",
+        "price" : 99,
+        "image" : "product_6.jpg",
+        "colors" : ["orange", "violet", "pink"] 
+    },
+    {
+        "title" : "Product 7",
+        "productId" : "777-000",
+        "price" : 75,
+        "image" : "product_7.jpg",
+        "colors" : ["green", "hotpink", "babyblue"] 
+    },
+    {
+        "title" : "Product 8",
+        "productId" : "88-000",
+        "price" : 300,
+        "image" : "product_8.jpg",
+        "colors" : ["teal", "babyblue", "midnightblue"] 
+    },
+    {
+        "title" : "Product 9",
+        "productId" : "999-000",
+        "price" : 754,
+        "image" : "product_9.jpg",
+        "colors" : ["forest green", "emerald", "grass green"] 
+    }
+]

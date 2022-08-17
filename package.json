@@ -1,0 +1,23 @@
+{
+  "name": "opgaver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LineBylov/opgaver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LineBylov/opgaver/issues"
+  },
+  "homepage": "https://github.com/LineBylov/opgaver#readme",
+  "devDependencies": {
+    "eslint": "^8.22.0"
+  }
+}
