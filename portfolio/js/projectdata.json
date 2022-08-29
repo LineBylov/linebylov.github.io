@@ -1,0 +1,20 @@
+[
+  {
+    "project" : "Fremtid - Exoskelet",
+    "image" : "Fremtid/media/Logo.svg",
+    "video" : "",
+    "site" : "projects/exo.html"
+  },
+  {
+    "project" : "Tved Amatørteater",
+    "image" : "TvedImg/TAT.svg",
+    "video" : "",
+    "site" : "projects/tved.html"
+  },
+  {
+    "project" : "Excalibur - Rollespil",
+    "image" : "ExcaliburProjekt/img/EX-Logo.svg",
+    "video" : "",
+    "site" : "projects/excalibur.html"
+  }
+]

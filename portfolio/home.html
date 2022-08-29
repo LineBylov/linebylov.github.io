@@ -8,25 +8,18 @@
       src="https://kit.fontawesome.com/7ae9d4106c.js"
       crossorigin="anonymous"
     ></script>
-  <link rel="icon" type="image/x-icon" href="img/logo.svg">
+  <link rel="icon" type="image/x-icon" href="media/img/logo.svg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/projects.js" defer></script>
   <title>Line Bylov Nørregaard</title>
 </head>
-<body onload="loading()">
-  <div id="loading" class="loading">
-    <div class="circle line"></div>
-  <div class="circle fly"></div>
-  <div class="circle float"></div>
-  <div class="circle disapear"></div>
-  <div class="circle copy"></div>
-  <div class="circle fall"></div>
-  </div>
+<body>
   <!-- NAVIGATION -->
   <nav class="nav">
     <div class="nav-logobox">
       <a href="#header" class="nav-logobox-link">
-        <img src="img/logo.svg" alt="logo" class="nav-logobox-img">
+        <img src="media/img/logo.svg" alt="logo" class="nav-logobox-img">
       </a>
     </div>
 
@@ -52,7 +45,7 @@
           </i>
         </div>
       </a>
-      <a href="#" target="_blank" class="nav-menu-link">
+      <a href="media/CV-LineBN.pdf" target="_blank" class="nav-menu-link">
         <div class="nav-menu-item">
           <p class="nav-menu-icontxt">CV</p>
         </div>
@@ -78,37 +71,15 @@
   <!-- PROJECTER -->
   <section class="project" id="project">
     <h2 class="project-heading">Projekter</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <h3 class="project-card-heading">Fremtid - Exoskelet</h3>
-        <button class="project-card-btn">
-          <a href="projects/exo.html" class="project-card-link">Se mere</a>
-        </button>
-        <img src="projects/sites/Fremtid/media/Logo.svg" alt="" class="project-card-img">
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-card-heading">Tved Amatørteater</h3>
-        <button class="project-card-btn">
-          <a href="projects/tved.html" class="project-card-link">Se mere</a>
-        </button>
-        <img src="projects/sites/TvedImg/TAT.svg" alt="" class="project-card-img">
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-card-heading">Excalibur - Rollespil</h3>
-        <button class="project-card-btn">
-          <a href="projects/excalibur.html" class="project-card-link">Se mere</a>
-        </button>
-        <img src="projects/sites/ExcaliburProjekt/img/EX-Logo.svg" alt="" class="project-card-img">
-      </div>
+    <div class="project-container" id="projectContainer">
+      <!-- projectdata.json and projects.js-->
     </div>
   </section>
 
   <section class="shift1"></section>
   <section class="mask">
     <div class="mask-object">
-      <img src="img/maskface.svg" alt="maskface" class="mask-object-img">
+      <img src="media/img/maskface.svg" alt="maskface" class="mask-object-img">
     </div>
   </section>
   <section class="shift2"></section>
@@ -119,13 +90,15 @@
       <div class="about-container-left">
         <h2 class="about-container-left-heading">Hvem er jeg?</h2>
         <p class="about-container-left-paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis obcaecati, nemo commodi perspiciatis itaque voluptatum assumenda ipsum corrupti animi pariatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi corporis quia facilis rem quaerat quod placeat provident, assumenda labore porro maxime ipsum quis, ipsa laborum doloribus repellendus velit at error architecto? 
+          At være kreativ har altid været en del af mit liv, om jeg så var god til det eller ej har det været en måde at udtrykke sig selv på. Teater har også været en anden måde at udtrykke sig på, og jeg har selv været med i nogle forestillinger ved Tved Amatørteater, som jeg også har lavet hjemmeside for.
+          <br><br>
+          Det med at udtrykke sig gør jeg stadig bare nu igennem hjemmesider og den måde ejer af hjemmesiden vil udtrykke sig selv på.
         </p>
       </div>
 
       <div class="about-container-right">
         <div class="about-container-right-imgbox">
-          <img src="img/aboutpic.jpg" alt="" class="about-container-right-img">
+          <img src="media/img/line-bylov-n.jpg" alt="Billede af Line Bylov Nøreggard" class="about-container-right-img">
         </div>
       </div>
     </div>
@@ -175,5 +148,4 @@
 
 
 </body>
-<script src="js/loader.js"></script>
 </html>

@@ -66,7 +66,6 @@ body {
 .letters {
   opacity: 0.4;
   transition: opacity 400ms 200ms ease-in-out;
-  font-size: 2rem;
 }
 .letters.is-done {
   opacity: 1;
@@ -78,8 +77,19 @@ body {
   overflow: hidden;
   width: 25px;
   height: 30px;
-  font-size: 25px;
+  font-size: 2rem;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .char-wrapper {
+    width: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .char-wrapper {
+    width: 15px;
+    font-size: 1.8rem;
+  }
 }
 .char-wrapper .char {
   transition: transform 100ms ease-in-out;
@@ -111,6 +121,11 @@ body {
 .site.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+@media (max-width: 768px) {
+  .site {
+    font-size: 1.6rem;
+  }
 }
 
 .shift1 {
@@ -459,7 +474,7 @@ body {
 }
 .project-card {
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 100px 100px 260px 260px;
   background-color: #b2d17a;
   width: 30rem;
@@ -468,6 +483,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 @media (min-width: 1920px) {
   .project-card {
@@ -481,56 +497,28 @@ body {
     height: 25rem;
   }
 }
-.project-card-img {
-  height: 100%;
-  object-fit: cover;
-}
 .project-card-heading {
-  padding: 0.5rem;
   font-size: 3rem;
-  color: white;
+  text-align: center;
+  color: black;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
 }
 @media (min-width: 1920px) {
   .project-card-heading {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 376px) {
   .project-card-heading {
     font-size: 2rem;
   }
 }
+.project-card-img {
+  height: 100%;
+  object-fit: cover;
+}
 .project-card-link {
   text-decoration: none;
-  color: white;
-}
-.project-card-link:hover {
-  color: white;
-}
-.project-card-btn {
-  padding: 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 500;
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  position: absolute;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: translateY(8rem);
-}
-.project-card-btn:hover {
-  font-weight: 700;
-  border: none;
-}
-@media (min-width: 1920px) {
-  .project-card-btn {
-    font-size: 2.8rem;
-  }
 }
 
 .about {
@@ -592,7 +580,7 @@ body {
 .about-container-left-heading {
   font-size: 3rem;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
-  margin: 5rem 0 2rem 0;
+  margin: 5rem 0 1rem 0;
 }
 @media (max-width: 1000px) {
   .about-container-left-heading {
@@ -601,12 +589,12 @@ body {
 }
 @media (max-width: 768px) {
   .about-container-left-heading {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
   }
 }
 .about-container-left-paragraph {
   font-size: 1.6rem;
-  margin: 0.5rem 0;
+  margin: 0 0 0 2rem;
 }
 @media (max-width: 768px) {
   .about-container-left-paragraph {
@@ -629,17 +617,22 @@ body {
 }
 .about-container-right-img {
   height: 100%;
-  transform: translateX(-130px);
+  transform: translateX(-230px);
 }
 @media (max-width: 768px) {
   .about-container-right-img {
-    transform: translateX(0px);
-    width: 100%;
+    transform: translateX(70px);
   }
 }
 @media (max-width: 500px) {
   .about-container-right-img {
     transform: translateX(0px);
+    width: auto;
+  }
+}
+@media (max-width: 500px) {
+  .about-container-right-img {
+    transform: translateX(-60px);
     width: auto;
     height: 100%;
   }
